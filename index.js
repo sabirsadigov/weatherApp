@@ -1,4 +1,5 @@
 const apiKey = "e175b6253efe97b8759cfcc2eb8e6930";
+
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.getElementById("inpt");
@@ -13,6 +14,7 @@ async function checkWeather(city) {
     document.querySelector(".weather").style.display = "none";
   } else {
     var data = await response.json();
+
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°C";

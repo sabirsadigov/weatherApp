@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: #001331;
 }
@@ -10,13 +15,11 @@ body {
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-
     .search {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         input {
             border: 0;
             outline: 0;
@@ -40,7 +43,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-
             img {
                 width: 19px;
             }
@@ -81,7 +83,6 @@ body {
                 display: flex;
                 align-items: center;
                 text-align: left;
-
                 img {
                     width: 40px;
                     margin-right: 10px;
